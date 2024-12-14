@@ -1,0 +1,132 @@
+
+        /* General Styles */
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #003366;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            color: white;
+        }
+
+        .navbar nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            gap: 15px;
+        }
+
+        .navbar nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar nav ul li a:hover,
+        .navbar nav ul li a.active {
+            background-color: #00509E;
+            border-radius: 5px;
+        }
+
+        
+
+        /* Search Bar Styles */
+        .search-bar {
+            display: flex;
+            gap: 5px;
+        }
+
+        .search-bar input {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .search-bar button {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background-color: darkorange;
+        }
+
+        /* Main Content Styles */
+        main {
+            padding: 20px;
+        }
+
+        .teasers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .teasers article {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .teasers article img {
+            height: auto;
+            object-fit: cover;
+            border-bottom: 3px solid #003366;
+        }
+
+        .teasers article h2 {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #003366;
+        }
+
+        .teasers article p {
+            font-size: 0.9em;
+            margin: 5px 0;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #003366;
+            color: white;
+        }
+    
+        @media (max-width: 768px) {
+            .navbar nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        
+            .teasers {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        

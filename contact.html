@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1>Indian Cricket Team News</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="article.html">Article</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="sources.html">Sources</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <p>Have questions or feedback? Get in touch using the form below!</p>
+
+      <form action="https://formspree.io/f/xpwzegko" method="POST">
+        <label>
+          Your email:
+          <input type="email" name="email">
+        </label>
+        <label>
+          Your message:
+          <textarea name="message"></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+
+      <p class="success-message"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Indian Cricket Team News. All rights reserved.</p>
+  </footer>
+</body>
+</html>
